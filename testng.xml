@@ -4,7 +4,10 @@
   <test name="ChromeTest">
   	<parameter name="browser" value="Chrome">
   		<classes>
+
   			<class name="orangeHRMLive.baseT"></class>
+  			
+  		
   			<class name="testsOrangeHRMLive.loginPageTest"></class>
   			<class name="testsOrangeHRMLive.homePageTest"></class>
   		</classes>

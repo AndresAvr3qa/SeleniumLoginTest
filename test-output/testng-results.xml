@@ -2,12 +2,12 @@
 <testng-results ignored="4" total="7" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-29T11:53:42 COT" name="Suite" finished-at="2021-03-29T11:53:53 COT" duration-ms="11407">
+  <suite started-at="2021-04-05T08:33:21 COT" name="Suite" finished-at="2021-04-05T08:33:33 COT" duration-ms="11740">
     <groups>
     </groups>
-    <test started-at="2021-03-29T11:53:42 COT" name="ChromeTest" finished-at="2021-03-29T11:53:53 COT" duration-ms="11407">
+    <test started-at="2021-04-05T08:33:21 COT" name="ChromeTest" finished-at="2021-04-05T08:33:33 COT" duration-ms="11740">
       <class name="orangeHRMLive.baseT">
-        <test-method is-config="true" signature="initBrowser(java.lang.String)[pri:0, instance:orangeHRMLive.baseT@4386f16]" started-at="2021-03-29T11:53:42 COT" name="initBrowser" finished-at="2021-03-29T11:53:50 COT" duration-ms="8059" status="PASS">
+        <test-method is-config="true" signature="initBrowser(java.lang.String)[pri:0, instance:orangeHRMLive.baseT@363ee3a2]" started-at="2021-04-05T08:33:21 COT" name="initBrowser" finished-at="2021-04-05T08:33:28 COT" duration-ms="6516" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,27 +18,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method is-config="true" signature="closingBrowser()[pri:0, instance:orangeHRMLive.baseT@4386f16]" started-at="2021-03-29T11:53:53 COT" name="closingBrowser" finished-at="2021-03-29T11:53:53 COT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closingBrowser()[pri:0, instance:orangeHRMLive.baseT@363ee3a2]" started-at="2021-04-05T08:33:33 COT" name="closingBrowser" finished-at="2021-04-05T08:33:33 COT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closingBrowser -->
       </class> <!-- orangeHRMLive.baseT -->
       <class name="testsOrangeHRMLive.homePageTest">
-        <test-method signature="homeValidatingLogin()[pri:0, instance:testsOrangeHRMLive.homePageTest@1b1473ab]" started-at="2021-03-29T11:53:53 COT" name="homeValidatingLogin" finished-at="2021-03-29T11:53:53 COT" duration-ms="39" status="PASS">
+        <test-method signature="homeValidatingLogin()[pri:0, instance:testsOrangeHRMLive.homePageTest@2f7c2f4f]" started-at="2021-04-05T08:33:32 COT" name="homeValidatingLogin" finished-at="2021-04-05T08:33:33 COT" duration-ms="389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homeValidatingLogin -->
       </class> <!-- testsOrangeHRMLive.homePageTest -->
       <class name="testsOrangeHRMLive.loginPageTest">
-        <test-method is-config="true" signature="logInPageObject()[pri:0, instance:testsOrangeHRMLive.loginPageTest@2ea227af]" started-at="2021-03-29T11:53:50 COT" name="logInPageObject" finished-at="2021-03-29T11:53:50 COT" depends-on-methods="orangeHRMLive.baseT.initBrowser" duration-ms="28" status="PASS">
+        <test-method is-config="true" signature="logInPageObject()[pri:0, instance:testsOrangeHRMLive.loginPageTest@4386f16]" started-at="2021-04-05T08:33:28 COT" name="logInPageObject" finished-at="2021-04-05T08:33:28 COT" depends-on-methods="orangeHRMLive.baseT.initBrowser" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logInPageObject -->
-        <test-method signature="loginValidatingSite()[pri:0, instance:testsOrangeHRMLive.loginPageTest@2ea227af]" started-at="2021-03-29T11:53:50 COT" name="loginValidatingSite" finished-at="2021-03-29T11:53:50 COT" duration-ms="15" status="PASS">
+        <test-method signature="loginValidatingSite()[pri:0, instance:testsOrangeHRMLive.loginPageTest@4386f16]" started-at="2021-04-05T08:33:28 COT" name="loginValidatingSite" finished-at="2021-04-05T08:33:28 COT" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginValidatingSite -->
-        <test-method signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:testsOrangeHRMLive.loginPageTest@2ea227af]" started-at="2021-03-29T11:53:50 COT" name="loginTest" data-provider="getData" finished-at="2021-03-29T11:53:53 COT" depends-on-methods="testsOrangeHRMLive.loginPageTest.loginValidatingSite" duration-ms="3186" status="PASS">
+        <test-method signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:testsOrangeHRMLive.loginPageTest@4386f16]" started-at="2021-04-05T08:33:28 COT" name="loginTest" data-provider="getData" finished-at="2021-04-05T08:33:32 COT" depends-on-methods="testsOrangeHRMLive.loginPageTest.loginValidatingSite" duration-ms="4340" status="PASS">
           <params>
             <param index="0">
               <value>

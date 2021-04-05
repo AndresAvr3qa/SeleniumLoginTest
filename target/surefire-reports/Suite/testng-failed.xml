@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="ChromeTest(failed)" verbose="0">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testsOrangeHRMLive.homePageTest">
+        <methods>
+          <include name="homeValidatingLogin"/>
+          <include name="closingBrowser"/>
+          <include name="initBrowser"/>
+        </methods>
+      </class> <!-- testsOrangeHRMLive.homePageTest -->
+      <class name="testsOrangeHRMLive.loginPageTest">
+        <methods>
+          <include name="closingBrowser"/>
+          <include name="initBrowser"/>
+          <include name="loginTest"/>
+          <include name="loginValidatingSite"/>
+          <include name="logInPageObject"/>
+        </methods>
+      </class> <!-- testsOrangeHRMLive.loginPageTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

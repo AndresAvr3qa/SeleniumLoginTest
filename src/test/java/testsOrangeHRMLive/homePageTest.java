@@ -13,9 +13,7 @@ public class homePageTest extends baseT{
 	
 		//Class variables
 		static String expectedURL ="https://opensource-demo.orangehrmlive.com/index.php/dashboard";
-		
-		
-		
+				
 		//Tests
 		@Test
 		public void homeValidatingLogin() {			
