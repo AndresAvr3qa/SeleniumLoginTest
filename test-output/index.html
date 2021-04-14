@@ -178,9 +178,8 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;ChromeTest&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;orangeHRMLive.baseT&quot;/&gt;
+      &lt;class name=&quot;resources.baseT&quot;/&gt;
       &lt;class name=&quot;testsOrangeHRMLive.loginPageTest&quot;/&gt;
       &lt;class name=&quot;testsOrangeHRMLive.homePageTest&quot;/&gt;
     &lt;/classes&gt;
@@ -226,15 +225,15 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginTest')
 data.setCell(0, 2, 'testsOrangeHRMLive.loginPageTest')
-data.setCell(0, 3, 4340);
+data.setCell(0, 3, 4114);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'homeValidatingLogin')
 data.setCell(1, 2, 'testsOrangeHRMLive.homePageTest')
-data.setCell(1, 3, 389);
+data.setCell(1, 3, 49);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'loginValidatingSite')
 data.setCell(2, 2, 'testsOrangeHRMLive.loginPageTest')
-data.setCell(2, 3, 15);
+data.setCell(2, 3, 21);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -260,18 +259,18 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">testsOrangeHRMLive.loginPageTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">closingBrowser</span>
-                <br/>
                 <span class="ignored-method-name">initBrowser</span>
+                <br/>
+                <span class="ignored-method-name">closingBrowser</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">testsOrangeHRMLive.homePageTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">closingBrowser</span>
-                <br/>
                 <span class="ignored-method-name">initBrowser</span>
+                <br/>
+                <span class="ignored-method-name">closingBrowser</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -283,9 +282,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">orangeHRMLive.baseT</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">resources.baseT</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">initBrowser(Chrome)</span>
+                <span class="method-name">initBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
@@ -293,29 +292,29 @@ return data;
               <div class="chronological-class-name">testsOrangeHRMLive.loginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">logInPageObject</span>
-                <span class="method-start">6516 ms</span>
+                <span class="method-start">9032 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginValidatingSite</span>
-                <span class="method-start">6559 ms</span>
+                <span class="method-start">9078 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginTest(Admin, admin123)</span>
-                <span class="method-start">7002 ms</span>
+                <span class="method-start">9202 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testsOrangeHRMLive.homePageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">homeValidatingLogin</span>
-                <span class="method-start">11344 ms</span>
+                <span class="method-start">13318 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">orangeHRMLive.baseT</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">resources.baseT</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">closingBrowser</span>
-                <span class="method-start">11992 ms</span>
+                <span class="method-start">13405 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

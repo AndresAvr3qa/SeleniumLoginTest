@@ -1,5 +1,9 @@
-package orangeHRMLive;
+package resources;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -12,20 +16,23 @@ import org.testng.annotations.Parameters;
 public class baseT {
 	
 	//Global Variables ---------
-	public static WebDriver driver;
-	public String baseURL ="https://opensource-demo.orangehrmlive.com/";
-	
+	public static WebDriver driver;	
+	public Properties propF;
+	String baseURL; 
 	
 	//Browser Initialization
 	@BeforeTest
-	@Parameters("browser")
-	public void initBrowser(String browser) {
-		
-		if(browser.equalsIgnoreCase("Chrome")){
+	public void initBrowser() throws IOException {
+		propF = new Properties();
+		FileInputStream fis = new FileInputStream("C:\\Users\\User\\eclipse-workspace\\Selenium\\OrangeHRMLive\\src\\main\\java\\resources\\data.properties");
+		propF.load(fis);
+		String browserName = propF.getProperty("browser");
+		baseURL = propF.getProperty("url");
+		if(browserName.equalsIgnoreCase("Chrome")){
 			System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\selenium-java-3.141.59\\chromedriver_win32\\chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.get("https://google.com");
-		}else if(browser.equalsIgnoreCase("Firefox")) {			
+		}else if(browserName.equalsIgnoreCase("Firefox")) {			
 			System.setProperty("webdriver.gecko.driver", "C:\\Selenium\\selenium-java-3.141.59\\chromedriver_win32\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}else {
@@ -33,6 +40,7 @@ public class baseT {
 		}
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().deleteAllCookies();
 		driver.get(baseURL);
 		
 	}

@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import Pages.homePage;
 import Pages.loginPage;
-import orangeHRMLive.baseT;
+import resources.baseT;
 
 public class homePageTest extends baseT{
 
