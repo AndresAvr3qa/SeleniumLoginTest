@@ -15,13 +15,17 @@ public class loginPageTest extends baseT{
 	
 	//Class Variables
 	static loginPage logInOr;
+	
 
 	
 	//Test Cases	
-	@Test(dataProvider="getData", dependsOnMethods=("loginValidatingSite")) //Based on validatingSite Test Method, will continue or not with login test
-	public void loginTest(String user, String pass) throws Exception{
-		logInOr.setUserName(user);
-		logInOr.setPassword(pass);	
+	@Test(dependsOnMethods=("loginValidatingSite")) //Based on validatingSite Test Method, will continue or not with login test
+	public void loginTest() throws Exception{
+		
+		logInOr.setUserName(logInOr.getUserPassExcel("UserID").get(0));
+		logInOr.setPassword(logInOr.getUserPassExcel("UserID").get(1));
+		//logInOr.setUserName(user);
+		//logInOr.setPassword(pass);	
 		logInOr.clickingOnLogIn();
 		System.out.println("login test....");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

@@ -3,15 +3,6 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="ChromeTest(failed)">
     <classes>
-      <class name="testsOrangeHRMLive.loginPageTest">
-        <methods>
-          <include name="initBrowser"/>
-          <include name="closingBrowser"/>
-          <include name="loginTest"/>
-          <include name="loginValidatingSite"/>
-          <include name="logInPageObject"/>
-        </methods>
-      </class> <!-- testsOrangeHRMLive.loginPageTest -->
       <class name="testsOrangeHRMLive.homePageTest">
         <methods>
           <include name="initBrowser"/>
