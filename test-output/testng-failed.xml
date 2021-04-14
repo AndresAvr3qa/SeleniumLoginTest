@@ -10,6 +10,15 @@
           <include name="homeValidatingLogin"/>
         </methods>
       </class> <!-- testsOrangeHRMLive.homePageTest -->
+      <class name="testsOrangeHRMLive.loginPageTest">
+        <methods>
+          <include name="initBrowser"/>
+          <include name="closingBrowser"/>
+          <include name="loginTest"/>
+          <include name="loginValidatingSite"/>
+          <include name="logInPageObject"/>
+        </methods>
+      </class> <!-- testsOrangeHRMLive.loginPageTest -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

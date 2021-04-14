@@ -19,7 +19,9 @@ public class dataDrivenXlsx {
 	public ArrayList<String> getData(String testData) throws IOException{
 		
 		ArrayList<String> al = new ArrayList<String>();		
-		FileInputStream fis = new FileInputStream("C:\\Users\\User\\eclipse-workspace\\Selenium\\OrangeHRMLive\\src\\main\\java\\resources\\OrangeHRMDatasrc.xlsx");
+		//FileInputStream fis = new FileInputStream("C:\\Users\\User\\eclipse-workspace\\Selenium\\OrangeHRMLive\\src\\main\\java\\resources\\OrangeHRMDatasrc.xlsx");
+		String srcExcelPath = System.getProperty("user.dir") + "/src/main/java/resources/OrangeHRMDatasrc.xlsx"; //Relative path > Excel in the project structure
+		FileInputStream fis = new FileInputStream(srcExcelPath);
 		XSSFWorkbook workbook = new XSSFWorkbook(fis); //Create an Excel workbook object
 		
 		int sheets = workbook.getNumberOfSheets();

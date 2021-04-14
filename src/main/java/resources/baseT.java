@@ -24,7 +24,8 @@ public class baseT {
 	@BeforeTest
 	public void initBrowser() throws IOException {
 		propF = new Properties();
-		FileInputStream fis = new FileInputStream("C:\\Users\\User\\eclipse-workspace\\Selenium\\OrangeHRMLive\\src\\main\\java\\resources\\data.properties");
+		String srcPropertiesPath = System.getProperty("user.dir") + "/src/main/java/resources/data.properties";
+		FileInputStream fis = new FileInputStream(srcPropertiesPath);
 		propF.load(fis);
 		String browserName = propF.getProperty("browser");
 		baseURL = propF.getProperty("url");
